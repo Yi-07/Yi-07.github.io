@@ -7,12 +7,20 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Twilight-yi</copyright>
-        <lastBuildDate>Sun, 26 Apr 2026 23:10:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>MyfirstBlog</title>
-        <link>http://localhost:1313/blog/myfirstblog/</link>
+        <lastBuildDate>Mon, 27 Apr 2026 22:47:24 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>博客站点搭建</title>
+        <link>http://localhost:1313/blog/%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/</link>
+        <pubDate>Mon, 27 Apr 2026 22:47:24 +0800</pubDate>
+        
+        <guid>http://localhost:1313/blog/%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9%E6%90%AD%E5%BB%BA/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>测试</title>
+        <link>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95/</link>
         <pubDate>Sun, 26 Apr 2026 23:10:53 +0800</pubDate>
         
-        <guid>http://localhost:1313/blog/myfirstblog/</guid>
+        <guid>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95/</guid>
         <description>&lt;h3 id=&#34;你好世界&#34;&gt;你好，世界！
 &lt;/h3&gt;</description>
         </item>

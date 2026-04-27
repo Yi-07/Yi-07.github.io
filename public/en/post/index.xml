@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>Twilight-yi</copyright>
-        <lastBuildDate>Sun, 26 Apr 2026 19:57:36 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 Apr 2026 22:47:44 +0800</lastBuildDate><atom:link href="http://localhost:1313/en/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>BlogSiteBuilt</title>
+        <link>http://localhost:1313/en/blog/blogsitebuilt/</link>
+        <pubDate>Mon, 27 Apr 2026 22:47:44 +0800</pubDate>
+        
+        <guid>http://localhost:1313/en/blog/blogsitebuilt/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>MyfirstBlog</title>
         <link>http://localhost:1313/en/blog/myfirstblog/</link>
         <pubDate>Sun, 26 Apr 2026 19:57:36 +0800</pubDate>
