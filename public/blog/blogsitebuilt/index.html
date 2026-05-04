@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
-<title>BlogSiteBuilt</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo 是一个用 Go语言 编写的静态网站生成器，配合 GitHub Pages 的免费托管，可以把你的 Markdown 文件变成一个在线博客">
+<title>个人博客搭建及托管（Hugo &#43; Github）</title>
 
 <link rel='canonical' href='http://localhost:1313/blog/blogsitebuilt/'>
 
-<link rel="stylesheet" href="/scss/style.min.86591c898bd806857815fbb8c47e8d3fed97c133b78e83d9bfc27b164dd0aa2b.css"><meta property='og:title' content="BlogSiteBuilt">
-<meta property='og:description' content="">
+<link rel="stylesheet" href="/scss/style.min.86591c898bd806857815fbb8c47e8d3fed97c133b78e83d9bfc27b164dd0aa2b.css"><meta property='og:title' content="个人博客搭建及托管（Hugo + Github）">
+<meta property='og:description' content="Hugo 是一个用 Go语言 编写的静态网站生成器，配合 GitHub Pages 的免费托管，可以把你的 Markdown 文件变成一个在线博客">
 <meta property='og:url' content='http://localhost:1313/blog/blogsitebuilt/'>
 <meta property='og:site_name' content='Twilight-yi的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-04-27T22:47:24&#43;08:00'/><meta property='article:modified_time' content='2026-04-27T22:47:24&#43;08:00'/>
-<meta name="twitter:title" content="BlogSiteBuilt">
-<meta name="twitter:description" content="">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-04-27T22:47:24&#43;08:00'/><meta property='article:modified_time' content='2026-04-27T22:47:24&#43;08:00'/><meta property='og:image' content='http://localhost:1313/blog/blogsitebuilt/images/image0.png' />
+<meta name="twitter:title" content="个人博客搭建及托管（Hugo + Github）">
+<meta name="twitter:description" content="Hugo 是一个用 Go语言 编写的静态网站生成器，配合 GitHub Pages 的免费托管，可以把你的 Markdown 文件变成一个在线博客"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/blog/blogsitebuilt/images/image0.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -248,20 +249,73 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#搭建准备">搭建准备</a></li>
+    <li><a href="#搭建流程">搭建流程</a>
+      <ol>
+        <li><a href="#创建本地-hugo-博客项目">创建本地 hugo 博客项目</a></li>
+        <li><a href="#github托管部署">Github托管部署</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/blog/blogsitebuilt/">
+                <img src="/blog/blogsitebuilt/images/image0_hu_ae34993c9678e49e.png"
+                        srcset="/blog/blogsitebuilt/images/image0_hu_ae34993c9678e49e.png 800w, /blog/blogsitebuilt/images/image0_hu_f40e9f3ef480a909.png 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post 个人博客搭建及托管（Hugo &#43; Github）" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/blog/blogsitebuilt/">BlogSiteBuilt</a>
+            <a href="/blog/blogsitebuilt/">个人博客搭建及托管（Hugo &#43; Github）</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            Hugo 是一个用 Go语言 编写的静态网站生成器，配合 GitHub Pages 的免费托管，可以把你的 Markdown 文件变成一个在线博客
+        </h3>
         
     </div>
 
@@ -316,7 +370,166 @@
     <section class="article-content">
     
     
-    
+    <h2 id="搭建准备">搭建准备
+</h2><ol>
+<li>
+<p>安装<a class="link" href="https://github.com/gohugoio/hugo/releases"  title="hugo源码仓库"
+     target="_blank" rel="noopener"
+    >hugo</a>  (根据你所用的电脑配置来按需安装对应版本，我这里用的Windows系统，hugo版本用的当前最新版本：<a class="link" href="https://github.com/gohugoio/hugo/releases/tag/v0.160.1"  target="_blank" rel="noopener"
+    >v0.160.1</a> )</p>
+<p><img src="/blog/blogsitebuilt/images/image1.png"
+	width="2559"
+	height="1539"
+	srcset="/blog/blogsitebuilt/images/image1_hu_199d85d7a4293883.png 480w, /blog/blogsitebuilt/images/image1_hu_c4508729ad5faded.png 1024w"
+	loading="lazy"
+	
+		alt="image1"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="166"
+		data-flex-basis="399px"
+	
+></p>
+</li>
+<li>
+<p>安装<a class="link" href="https://themes.gohugo.io/"  title="hugo主题库"
+     target="_blank" rel="noopener"
+    >hugo theme</a>（这里我选用<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack"  title="stack主题源码仓库"
+     target="_blank" rel="noopener"
+    >Stack主题</a> ，版本按需选择，这里我选择v3大版本中最新的稳定版本<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/releases/tag/v3.34.2"  target="_blank" rel="noopener"
+    >v3.34.2 </a> ）</p>
+<p><img src="/blog/blogsitebuilt/images/image2.png"
+	width="2559"
+	height="1542"
+	srcset="/blog/blogsitebuilt/images/image2_hu_28c1e04b065a9d4c.png 480w, /blog/blogsitebuilt/images/image2_hu_1e362b0cf70cd85.png 1024w"
+	loading="lazy"
+	
+		alt="image2"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="165"
+		data-flex-basis="398px"
+	
+></p>
+</li>
+<li>
+<p>安装<a class="link" href="[Git]%28https://git-scm.com/%29"  title="Git官网"
+    >git</a> ，并注册一个<a class="link" href="https://github.com/"  title="Github官网"
+     target="_blank" rel="noopener"
+    >Github</a>账号（本教程略）</p>
+</li>
+<li>
+<p>上面装的hugo需要配置环境变量才可全局访问（git的安装向导会提示你设置全局，也可以手动设置，操作同hugo），以windows为例，打开开始菜单搜索<code>编辑系统环境变量</code> ，点击$环境变量 \rightarrow Path(用户变量)$ $ \rightarrow 新建</p>
+$$ \rightarrow 填写安装好的hugo文件路径$$<p> \rightarrow 确定*3$</p>
+<p><img src="/blog/blogsitebuilt/images/image3.png"
+	width="1807"
+	height="1268"
+	srcset="/blog/blogsitebuilt/images/image3_hu_f2f5b49fdd781592.png 480w, /blog/blogsitebuilt/images/image3_hu_bff63c1818053a09.png 1024w"
+	loading="lazy"
+	
+		alt="image3"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="142"
+		data-flex-basis="342px"
+	
+></p>
+<p><code>win+r</code> 用输入命令<code>cmd</code>打开命令提示符 ,输入命令 <code>hugo version</code> 和<code>git -v</code>验证一下是否成功，成功后有版本号输出</p>
+<p><img src="/blog/blogsitebuilt/images/image4.png"
+	width="1734"
+	height="927"
+	srcset="/blog/blogsitebuilt/images/image4_hu_fed18a6076925471.png 480w, /blog/blogsitebuilt/images/image4_hu_206e82d4d461d183.png 1024w"
+	loading="lazy"
+	
+		alt="image4"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="187"
+		data-flex-basis="448px"
+	
+></p>
+</li>
+</ol>
+<h2 id="搭建流程">搭建流程
+</h2><p>下面的操作是我参考b站UP主 <a class="link" href="https://www.bilibili.com/video/BV1bovfeaEtQ?spm_id_from=333.788.videopod.sections&amp;vd_source=b1e2460771cdfeeedfc430c3edea4cd6"  target="_blank" rel="noopener"
+    >Letere-莱特雷</a> 的教程搭建的，当然你也可以按照<a class="link" href="https://gohugo.io/getting-started/quick-start/"  target="_blank" rel="noopener"
+    >官方文档</a>的最新教程来操作</p>
+<h3 id="创建本地-hugo-博客项目">创建本地 hugo 博客项目
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"># 1.创建项目框架 dev (在你期望的的路径下操作，我这里路径为<span class="s2">&#34;D:\mydocument\myblog&#34;</span>)
+</span></span><span class="line"><span class="cl">hugo new site dev
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 2.进入到dev目录下
+</span></span><span class="line"><span class="cl"><span class="k">cd</span> dev 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 3.初始化git仓库（方便管理项目版本，同时后面会用git推送到Github仓库里）
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 4.①将安装解压好的主题 Stack 放到 themes/Stack 目录下
+</span></span><span class="line"><span class="cl"># 4.②也可以通过git命令安装 git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/Stack
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 5.在项目配置文件中添加一行，指示当前主题
+</span></span><span class="line"><span class="cl"><span class="k">echo</span> <span class="s2">&#34;theme = &#39;Stack&#39;&#34;</span> <span class="p">&gt;&gt;</span> hugo.toml
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 6.向项目中添加一个新页面（后面创建博客页面也是如此）
+</span></span><span class="line"><span class="cl">hugo new content content/posts/my-first-post.md
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 7.使用编辑器打开文件my-first-post.md，你会看到自动生成的前言，如下图，你可以在前言下方书写你的草稿（Markdown代码），但请不要随意改动引言的内容或删除，否则可能会出现一些问题，如果你想改动，可以去研究一下官方文档 https://gohugo.io/content-management/front-matter/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/blog/blogsitebuilt/images/image5.png"
+	width="571"
+	height="147"
+	srcset="/blog/blogsitebuilt/images/image5_hu_62a49c4877a67409.png 480w, /blog/blogsitebuilt/images/image5_hu_4fec4b0aaefffddb.png 1024w"
+	loading="lazy"
+	
+		alt="image5"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="388"
+		data-flex-basis="932px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl"># 8.启动 hugo 服务
+</span></span><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>完成上面的步骤你就已经搭建好你的本地博客站点啦</p>
+<h3 id="github托管部署">Github托管部署
+</h3>
 </section>
 
 

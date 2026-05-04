@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-27T22:47:24+08:00</lastmod>
+    <lastmod>2026-05-02T00:48:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,48 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2026-05-02T00:48:13+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/post/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/blog/develop-learning-checklist/</loc>
+    <lastmod>2026-05-02T00:48:13+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/page/</loc>
+    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/page/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/archives/</loc>
+    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/archives/"
                 />
   </url><url>
     <loc>http://localhost:1313/blog/blogsitebuilt/</loc>
@@ -28,56 +70,17 @@
                 href="http://localhost:1313/blog/blogsitebuilt/"
                 />
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2026-04-27T22:47:24+08:00</lastmod>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/post/"
+                href="http://localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/post/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/myfirstblog/</loc>
-    <lastmod>2026-04-26T23:10:53+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/blog/myfirstblog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/myfirstblog/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/page/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/page/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/archives/"
+                href="http://localhost:1313/about/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -102,18 +105,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/about/"
                 />
   </url><url>
     <loc>http://localhost:1313/search/</loc>

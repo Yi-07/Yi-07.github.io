@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/en/</loc>
-    <lastmod>2026-04-27T22:47:44+08:00</lastmod>
+    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -13,6 +13,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/archives/</loc>
+    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/archives/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/page/</loc>
+    <lastmod>2026-04-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/page/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/blog/blogsitebuilt/</loc>
@@ -39,45 +65,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/post/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/blog/myfirstblog/</loc>
-    <lastmod>2026-04-26T19:57:36+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/myfirstblog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/blog/myfirstblog/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/archives/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/page/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/about/</loc>
