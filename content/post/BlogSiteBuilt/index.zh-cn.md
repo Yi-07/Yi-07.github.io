@@ -10,21 +10,21 @@ image: images/image0.png
 
 1. 安装[hugo](https://github.com/gohugoio/hugo/releases "hugo源码仓库")  (根据你所用的电脑配置来按需安装对应版本，我这里用的Windows系统，hugo版本用的当前最新版本：[v0.160.1](https://github.com/gohugoio/hugo/releases/tag/v0.160.1) )
 
-   ![image1](images\image1.png)
+   ![image1](images/image1.png)
 
 2. 安装[hugo theme](https://themes.gohugo.io/ "hugo主题库")（这里我选用[Stack主题](https://github.com/CaiJimmy/hugo-theme-stack "stack主题源码仓库") ，版本按需选择，这里我选择v3大版本中最新的稳定版本[v3.34.2 ](https://github.com/CaiJimmy/hugo-theme-stack/releases/tag/v3.34.2) ）
 
-   ![image2](images\image2.png)
+   ![image2](images/image2.png)
 
 3. 安装[git]([Git](https://git-scm.com/) "Git官网") ，并注册一个[Github](https://github.com/ "Github官网")账号（本教程略）
 
 4. 上面装的hugo需要配置环境变量才可全局访问（git的安装向导会提示你设置全局，也可以手动设置，操作同hugo），以windows为例，打开开始菜单搜索`编辑系统环境变量` ，点击$环境变量 \rightarrow Path(用户变量)$ $ \rightarrow 新建$$ \rightarrow 填写安装好的hugo文件路径$$ \rightarrow 确定*3$
 
-   ![image3](images\image3.png)
+   ![image3](images/image3.png)
 
    `win+r` 用输入命令`cmd`打开命令提示符 ,输入命令 `hugo version` 和`git -v`验证一下是否成功，成功后有版本号输出
 
-   ![image4](images\image4.png)
+   ![image4](images/image4.png)
 
 ## 搭建流程
 
@@ -54,7 +54,7 @@ hugo new content content/posts/my-first-post.md
 # 7.使用编辑器打开文件my-first-post.md，你会看到自动生成的前言，如下图，你可以在前言下方书写你的草稿（Markdown代码），但请不要随意改动引言的内容或删除，否则可能会出现一些问题，如果你想改动，可以去研究一下官方文档 https://gohugo.io/content-management/front-matter/
 ```
 
-![image5](images\image5.png)
+![image5](images/image5.png)
 
 ```cmd
 # 8.启动 hugo 服务
