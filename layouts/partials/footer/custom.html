@@ -1,0 +1,7 @@
+<canvas id="particle-stars" aria-hidden="true"></canvas>
+
+{{- $opts := dict "minify" true -}}
+{{- with resources.Get "js/particle-stars.js" -}}
+  {{- $script := . | js.Build $opts | fingerprint "sha256" -}}
+  <script src="{{ $script.RelPermalink }}" defer integrity="{{ $script.Data.Integrity }}"></script>
+{{- end -}}

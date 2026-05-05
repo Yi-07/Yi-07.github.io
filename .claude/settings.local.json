@@ -9,7 +9,21 @@
       "Bash(curl -s http://localhost:1313/zh-cn/sitemap.xml)",
       "Bash(curl -s http://localhost:1313/post/)",
       "Bash(curl -s http://localhost:1313/scss/style.min.*.css)",
-      "Bash(curl -s http://localhost:1313/)"
+      "Bash(curl -s http://localhost:1313/)",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "Skill(firecrawl-search)",
+      "mcp__plugin_context7_context7__query-docs",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(f'{r[\\\\\"title\\\\\"]}\\\\n{r[\\\\\"url\\\\\"]}\\\\n'\\) for r in d.get\\('data',{}\\).get\\('web',[]\\)]\")",
+      "Bash(pkill -f \"hugo server\")",
+      "Bash(hugo --disableFastRender)",
+      "Bash(hugo build *)",
+      "Bash(hugo server *)",
+      "Bash(pkill -f \"hugo\")",
+      "Bash(taskkill //F //IM hugo.exe)",
+      "Bash(curl -s http://localhost:1313/js/particle-stars.f2bd6009d701b18b58fc8fd13ca0ad64dc5c8cf52ad59df3d4934169f98c8cd8.js)",
+      "Bash(curl -s http://localhost:1313/archives/)",
+      "Bash(curl -s http://localhost:1313/search/)",
+      "Bash(curl -s http://localhost:1313/about/)"
     ]
   }
 }
