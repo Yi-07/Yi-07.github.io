@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sI http://localhost:1313/blog/)",
+      "Bash(curl -s http://localhost:1313/blog/)",
+      "Bash(curl -s http://localhost:1313/blog/develop-learning-checklist/)",
+      "Bash(curl -s http://localhost:1313/blog/blogsitebuilt/)",
+      "Bash(curl -s http://localhost:1313/sitemap.xml)",
+      "Bash(curl -s http://localhost:1313/zh-cn/sitemap.xml)",
+      "Bash(curl -s http://localhost:1313/post/)",
+      "Bash(curl -s http://localhost:1313/scss/style.min.*.css)",
+      "Bash(curl -s http://localhost:1313/)"
+    ]
+  }
+}

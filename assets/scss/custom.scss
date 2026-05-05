@@ -1,0 +1,46 @@
+// =============================================
+// Stack 主题布局修复
+// 问题：三栏布局比例失调，整体偏左，右侧空白过多
+// 修复：平衡侧边栏宽度，增加间距
+// =============================================
+
+// Fix 1: 覆写 extended 模式下的侧边栏宽度，平衡三栏比例
+.container.extended {
+    @media (min-width: 1280px) {
+        // 左侧栏：原 15% ≈ 230px → 280px，给头像和导航足够空间
+        --left-sidebar-max-width: 280px;
+        // 右侧栏：原 25% ≈ 384px → 280px，TOC 大小合理
+        --right-sidebar-max-width: 280px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        --left-sidebar-max-width: 240px;
+        --right-sidebar-max-width: 250px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        --left-sidebar-max-width: 210px;
+        --right-sidebar-max-width: 220px;
+    }
+}
+
+// Fix 2: 主内容区与侧边栏之间增加内边距
+main.main {
+    @media (min-width: 1280px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+// Fix 3: 左侧边栏内部间距
+.left-sidebar {
+    @media (min-width: 768px) {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
