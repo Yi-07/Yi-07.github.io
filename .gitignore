@@ -1,6 +1,9 @@
 public/
 resources/
 .hugo_build.lock
+assets/jsconfig.json
+
 .firecrawl/
 .claude/
-assets/jsconfig.json
+
+summary/
