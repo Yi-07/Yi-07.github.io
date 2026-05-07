@@ -7,9 +7,7 @@
 // Fix 1: 覆写 extended 模式下的侧边栏宽度，平衡三栏比例
 .container.extended {
     @media (min-width: 1280px) {
-        // 左侧栏：原 15% ≈ 230px → 280px，给头像和导航足够空间
         --left-sidebar-max-width: 280px;
-        // 右侧栏：原 25% ≈ 384px → 280px，TOC 大小合理
         --right-sidebar-max-width: 280px;
     }
 
@@ -42,5 +40,143 @@ main.main {
     @media (min-width: 768px) {
         padding-left: 6px;
         padding-right: 6px;
+    }
+}
+
+// =============================================
+// Fix 4: 文章图片居中（不受嵌套层级影响）
+//
+// Hugo v0.160.1 默认 render hook 将独立图片渲染为裸 <img>
+//（非 <figure> 包裹），因此直接对 img 设置居中。
+// =============================================
+.article-content {
+    img {
+        display: block;
+        margin-block: 1.5em;
+        margin-inline: auto;
+    }
+
+    // 列表 padding 左右对称，与 --card-padding 一致，
+    // 使内嵌在 li 中的图片也能在主内容区居中
+    ol,
+    ul {
+        padding-left: var(--card-padding);
+        padding-right: var(--card-padding);
+    }
+}
+
+// =============================================
+// Code block collapse/expand — "Observatory"
+// =============================================
+.article-content div.highlight.code-collapsed,
+.article-content div.highlight.code-expanded {
+    overflow: hidden;
+}
+
+.article-content div.highlight {
+    position: relative;
+    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article-content div.highlight.code-collapsed {
+    max-height: 320px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 96px;
+        background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            var(--pre-background-color) 88%
+        );
+        pointer-events: none;
+        z-index: 1;
+    }
+}
+
+// Expand button — bottom bar with thin separator line
+.code-expand-btn {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-top: 0.5px solid var(--card-separator-color);
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    transition: background 0.25s ease, border-color 0.25s ease;
+
+    &:hover {
+        background: rgba(128, 128, 128, 0.08);
+    }
+
+    &:focus-visible {
+        outline: none;
+        background: rgba(128, 128, 128, 0.10);
+        border-top-color: var(--accent-color);
+    }
+}
+
+// Toggle unit: text + chevron
+.code-expand-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 9px 16px;
+    transition: gap 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.code-expand-btn:hover .code-expand-toggle {
+    gap: 10px;
+}
+
+.code-expand-text {
+    font-size: 11.5px;
+    font-family: var(--base-font-family);
+    color: var(--card-text-color-tertiary);
+    letter-spacing: 0.04em;
+    user-select: none;
+    transition: color 0.25s ease;
+}
+
+.code-expand-btn:hover .code-expand-text {
+    color: var(--card-text-color-secondary);
+}
+
+// CSS chevron — pure border trick, no images
+.code-expand-chevron {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-right: 1.5px solid var(--card-text-color-tertiary);
+    border-bottom: 1.5px solid var(--card-text-color-tertiary);
+    transform: rotate(45deg) translateY(-1.5px);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.25s ease;
+}
+
+.code-expand-btn:hover .code-expand-chevron {
+    border-color: var(--card-text-color-secondary);
+}
+
+// Expanded: chevron flips to point up
+.code-expanded + .code-expand-btn .code-expand-chevron {
+    transform: rotate(-135deg) translateY(-1.5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .article-content div.highlight,
+    .code-expand-toggle,
+    .code-expand-chevron {
+        transition: none;
     }
 }

@@ -1,5 +1,5 @@
 baseurl: https://Yi-07.github.io
-languageCode: en-us
+languageCode: zh-cn
 theme: hugo-theme-stack-3.34.2
 title: MySite
 copyright: Twilight-yi
@@ -83,7 +83,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
+        enabled: true
         provider: utterances
 
         disqusjs:
@@ -94,9 +94,9 @@ params:
             adminLabel:
 
         utterances:
-            repo:
-            issueTerm: pathname
-            label:
+            repo: Yi-07/Yi-07.github.io
+            issueTerm: Yi-07/Yi-07.github.io
+            label: comments
 
         beaudar:
             repo:
@@ -235,6 +235,8 @@ related:
 
 markup:
     goldmark:
+        parser:
+            wrapStandAloneImageWithinParagraph: false
         extensions:
             passthrough:
                 enable: true

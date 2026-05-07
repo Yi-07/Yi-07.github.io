@@ -18,21 +18,22 @@ image: images/image0.png
 
    - 安装[hugo](https://github.com/gohugoio/hugo/releases "hugo源码仓库")  (根据你所用的电脑配置来按需安装对应版本，我这里用的 `Windows` 系统，`hugo` 版本用的当前最新版本：[v0.160.1](https://github.com/gohugoio/hugo/releases/tag/v0.160.1) )
 
-   ![image1](images/image1.png)
+    ![image1](images/image1.png)
 
    - 安装[hugo theme](https://themes.gohugo.io/ "hugo主题库")（这里我选用[Stack主题](https://github.com/CaiJimmy/hugo-theme-stack "stack主题源码仓库") ，版本按需选择，这里我选择v3大版本中最新的稳定版本[v3.34.2 ](https://github.com/CaiJimmy/hugo-theme-stack/releases/tag/v3.34.2) ）
 
-   ![image2](images/image2.png)
+    ![image2](images/image2.png)
 
    - 安装[git]([Git](https://git-scm.com/) "Git官网") ，并注册一个[Github](https://github.com/ "Github官网")账号（本教程略）
 
-3. 上面装的 `hugo` 需要配置环境变量才可全局访问（`git` 的安装向导会提示你设置全局，也可以手动设置，操作同 `hugo` ），以`windows` 为例，打开开始菜单搜索`编辑系统环境变量` ，依次点击`环境变量 → Path(用户变量) → 新建 → 填写安装好的hugo文件路径 → 确定*3`
+3. 配置全局环境变量
+   - 上面装的 `hugo` 需要配置环境变量才可全局访问（`git` 的安装向导会提示你设置全局，也可以手动设置，操作同 `hugo` ），以`windows` 为例，打开开始菜单搜索`编辑系统环境变量` ，依次点击`环境变量 → Path(用户变量) → 新建 → 填写安装好的hugo文件路径 → 确定*3`
 
-   ![image3](images/image3.png)
+    ![image3](images/image3.png)
 
-   `win+r` 用输入命令`cmd`打开命令提示符 ,输入命令 `hugo version` 和`git -v`验证一下是否成功，成功后有版本号输出
+   - `win+r` 用输入命令`cmd`打开命令提示符 ,输入命令 `hugo version` 和`git -v`验证一下是否成功，成功后有版本号输出
 
-   ![image4](images/image4.png)
+    ![image4](images/image4.png)
 
 ## 搭建流程
 
@@ -62,7 +63,7 @@ hugo new content content/posts/my-first-post.md
 # 7.使用编辑器打开文件my-first-post.md，你会看到自动生成的前言，如下图，你可以在前言下方书写你的草稿（Markdown代码），但请不要随意改动引言的内容或删除，否则可能会出现一些问题，如果你想改动，可以去研究一下官方文档 https://gohugo.io/content-management/front-matter/
 ```
 
-   ![image5](images/image5.png)
+  ![image5](images/image5.png)
 
 ```powershell
 # 8.启动 hugo 服务
@@ -75,17 +76,17 @@ hugo server -D
 
 1. 新建一个仓库，命名为 `你的用户名.github.io`（这样我们就可以得到 `github` 给我们提供的一个免费域名 `“https://你的用户名.github.io/”`）
 
-   ![image6](images/image6.png)
+  ![image6](images/image6.png)
 
-![image7](images/image7.png)
+  ![image7](images/image7.png)
 
 2. 打开刚刚创建好的仓库，点击仓库上方的 `Settings`，再点击 Pages，将 `Build and deployment`下的 `Source` 改为 `Github Actions`（默认为 `Deploy from a branch`）
 
-   ![image9](images/image9.png)
+  ![image9](images/image9.png)
 
 3. 回到之前创建好的本地 `hugo` 博客项目，打开 `hugo.yaml`（你的站点配置文件，在项目根目录 `dev` 下），确认 `baseURL` 是你的 `GitHub Pages` 地址，并添加图片缓存配置
 
-   ![image10](images/image10.png)
+  ![image10](images/image10.png)
 
 4. 在项目根目录下创建工作流文件
 
@@ -195,9 +196,9 @@ hugo server -D
            uses: actions/deploy-pages@v5
    ```
 
-   这里有一点要注意一下：如果你前面本地搭建的本地博客项目中的主题是通过的 `git` 的子模块来安装的话（详细看前面2.1的4.②），那么上面的 `yaml` 文件里代码中的 `submodules` 要将 `false → recursive`
+  这里有一点要注意一下：如果你前面本地搭建的本地博客项目中的主题是通过的 `git` 的子模块来安装的话（详细看前面2.1的4.②），那么上面的 `yaml` 文件里代码中的 `submodules` 要将 `false → recursive`
 
-   ![image11](images/image11.png)
+  ![image11](images/image11.png)
 
    
 
@@ -229,6 +230,6 @@ hugo server -D
 
    等待一会Github Action工作流跑完就可以访问博客站点了
 
-   ![image12](images/image12.png)
+  ![image12](images/image12.png)
 
-   ![image13](images/image13.png)
+  ![image13](images/image13.png)
